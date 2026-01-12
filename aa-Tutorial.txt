@@ -1,0 +1,66 @@
+#                             GIT  Tutorial
+#                            _______________
+
+
+step 1: Simply installing GIT 
+
+step 2: Configuring GIT
+    Run these commands in your terminal(or git bash) after installing git
+        git config --global user.name "Your Name"
+        git config --global user.email "Your Email"
+        git config --global core.editor "code --wait"  # Optional , sets VS code as editor
+    To check Your config:
+        git config --list
+
+
+step 3: Git Workflow Basics
+    1)Working directory - Where u edit files                # Git-Tutorial-Beginners in our case
+    2)Staging Area- Where you prepare files for committing
+    3)Repository- where committed changes are stored permanently
+
+    edit files ->  git add  -> git commit
+
+step 4: Useful basic commands
+    1) git -V   (checks version of git)
+    2) git init  ( initializes git repository)
+    3) git status ( check commits on selected branch)
+    4) git add about.html assets/ index.html  (Uploads to staging area)
+.                or
+.      git add .     ( using dot "." to add all files to staging area )
+    5) git commit -m "Initial commit"  (commititng the staging area files of repo with a message)
+    6) git log    ( a command to list all commits)
+        or
+       git log -- oneline  (shows commit headings i.e messagessz)
+    7) git clone https://github.com/Akshat-Gupta-19/TicTacToeGame.git   ( clones existing repos on github)
+    8) git dif  ( displays changes made in modified file before new commit)
+        or 
+       git diff --staged  ( shows what will go into your next commit)
+    9) git restore index.html  ( restores changes made on a file)
+        or
+       git restore --staged  ( changes not reverted , just removed from staging area)
+        or 
+       git restore .     ( reverts all the modified changes)
+    10) git commit --amend -m "added para text"   (amends the previous commit)
+    11) git reset --soft HEAD~1    ( Resets to previous commit . but keeps changes in staging)
+          or
+        git reset HEAD~1    ( Keeps changes in working directory)
+          or 
+        git reset --hard HEAD~1   ( PERMANENTLY DELETES UNCOMMITTED WORK)
+    12) git rm file.txt   ( removes file.txt from repository and disk)
+        git commit -m "Remove file.txt"
+    13) git rm --cached file.txt   ( removes from repo but keeps on disk)
+        git commit -m "Stop tracking file.txt
+    14) git mv about.html abt.html  ( renames about.html to abt.html)
+        git commit -m "Rename the log file "
+    15) git branch  ( shows you the current branch)
+    16) git branch new_branch_name   ( creates a new branch)
+    17) git checkout branch_name    ( switch to other branch)
+        or 
+        git switch branch_name     ( newer command for same)
+    18) git checkout -b new_branch_name     (Creates and switches in one command)
+    18) git switch -c new_branch_name    ( same thing)
+
+step 5: Creating gitignore file
+    1) create a " .gitignore " file as spelled exactly
+        touch .gitignore
+    2) Write the name of the files you want to keep safe inside the .gitignore file
