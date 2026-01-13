@@ -59,6 +59,8 @@ step 4: Useful basic commands
         git switch branch_name     ( newer command for same)
     18) git checkout -b new_branch_name     (Creates and switches in one command)
     18) git switch -c new_branch_name    ( same thing)
+    19) git merge ui-Revolution       ( merges new branch i.e ui-revolution to the main/master branch)
+    20) git branch -d Branch_name     ( deletes a branch)
 
 step 5: Creating gitignore file
     1) create a " .gitignore " file as spelled exactly
