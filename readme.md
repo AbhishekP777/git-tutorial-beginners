@@ -1,10 +1,12 @@
-# The best github repo out there
+# The best github REPO out there !
+This is readme 
+The best ways are:
+-Eat
+-Sleep
+-Code 
+-Repeat
 
-This is readme
-The ways are :
--eat
--sleep
--code
--repeat
+Thank you !
 
-Thank you
+# Summary 
+Its a nice repo
